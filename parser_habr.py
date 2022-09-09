@@ -5,7 +5,7 @@ url = "https://habr.com/ru/flows/develop/"
 r = requests.get(url)
 src = r.text
 
-with open("index.html", "w", encoding = "utf-8-sig") as file:
+with open("index.html", "w", encoding = "utf-8") as file:
     file.write(src)
     
 with open("index.html", "r", encoding = "utf-8") as file:
